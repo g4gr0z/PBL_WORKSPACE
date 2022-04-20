@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body onload="getTodos()">
+    
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
+    
+    <div id="app">
+        <div id="pomodoro">
+            <p id="work" class="label">Work:</p><p id="break" class="label">Break:</p><p id="cycles" class="label">Cycles:</p>
+        <!--Work Timer-->
+        <div id="work-timer" class="timer">
+            <p id="w_minutes">25</p><p class="semicolon">:</p><p id="w_seconds">00</p>
+        </div>
+
+        <!--Cycle Counter-->
+        <p id="counter" class="timer">0</p>
+
+        <!--Break Timer-->
+        <div id="break-timer" class="timer">
+            <p id="b_minutes">05</p><p class="semicolon">:</p><p id="b_seconds">00</p>
+        </div>
+        <button id="start" class="btn">Start</button>
+        <button id="stop" class="btn">Pause</button>
+        <button id="reset" class="btn">Reset</button>
+        </div>
+        
+        <div id="container">
+            <h1>TO-DO LIST <i class="fa fa-plus"></i></h1>
+            <input id="todo-input" type="text" placeholder="Type here" onkeypress="addTodo(event)">
+            <ul id="todo-container">
+
+            </ul>
+        </div>
+
+    </div>
+    
+
+    
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
